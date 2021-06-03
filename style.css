@@ -30,9 +30,21 @@ nav ul li{
     
 }
 
-nav ul li:hover{
-    /* list-style-type: armenian; */
-    background:#fff;
+
+
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:rgb(184, 41, 41);
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+  
 }
 
 
@@ -87,7 +99,7 @@ p{
 
 
 .header{
-    background:radial-gradient(#fff,coral);
+    background:radial-gradient(#fff,#ffd6d6);
     font-weight: bold;
 }
 
